@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jithu Site</title>
+    <link rel="shortcut icon" href="images/j-logo.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+</head>
+
+<body>
+
+    <!-- Navigation section -->
+    <div class="navbar">
+        <div class="site-logo">Jithu</div>
+        <div class="navigation-links">
+            <div class="close-btn"><i class="bi bi-x"></i></div>
+            <div class="nav-links">
+                <div class="nav-link"><a href="#">Movies</a></div>
+                <div class="nav-link"><a href="#">Stream</a></div>
+                <div class="nav-link"><a href="#">Events</a></div>
+                <div class="nav-link"><a href="#">Plays</a></div>
+                <div class="nav-link"><a href="#">Sports</a></div>
+                <div class="nav-link"><a href="#">Activities</a></div>
+            </div>
+            <div class="search">
+                <input type="text" placeholder="search movies..."><i class="bi bi-search"></i>
+            </div>
+            <div class="contact-us">
+                <a href="#footerSection">Contact us</a>
+            </div>
+        </div>
+        <div class="nav-toggle-btn">
+            <button><i class="bi bi-list"></i></button>
+        </div>
+    </div>
+
+    <!-- Popular Movies -->
+    <div class="popular-movies">
+        <h1>Popular Movies</h1>
+        <div class="movies">
+            <div class="movie">
+                <div class="movie-img">
+                    <img src="images/rrr poster.jpg" alt="RRR movie poster">
+                </div>
+                <div class="movie-title">RRR</div>
+            </div>
+            <div class="movie">
+                <div class="movie-img">
+                    <img src="images/bahubali 1.jpg" alt="Bahubali 1 movie poster">
+                </div>
+                <div class="movie-title">Bahubali 1</div>
+            </div>
+            <div class="movie">
+                <div class="movie-img">
+                    <img src="images/devara poster.jpg" alt="Devara movie poster">
+                </div>
+                <div class="movie-title">Devara</div>
+            </div>
+            <div class="movie">
+                <div class="movie-img">
+                    <img src="images/K.G.F_Chapter_2.jpg" alt="KGF chapter 2 movie poster">
+                </div>
+                <div class="movie-title">KGF Chapter-2</div>
+            </div>
+            <div class="movie">
+                <div class="movie-img">
+                    <img src="images/KANTARA poster.jpg" alt="Kantara movie poster">
+                </div>
+                <div class="movie-title">Kantara</div>
+            </div>
+            <div class="movie">
+                <div class="movie-img">
+                    <img src="images/jersey.jpg" alt="Jersey movie poster">
+                </div>
+                <div class="movie-title">Jersey</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Recommanded movies -->
+    <div class="recommended-movies">
+        <h1>recommended Movies</h1>
+        <div class="movies">
+            <div class="movie">
+                <div class="movie-img">
+                    <img src="images/kgf poster.jpg" alt="KGF chapter-1 movie poster">
+                </div>
+                <div class="movie-title">KGF Chapter-1</div>
+            </div>
+            <div class="movie">
+                <div class="movie-img">
+                    <img src="images/mirchi-poster.jpeg" alt="Mirchi movie poster">
+                </div>
+                <div class="movie-title">Mirchi</div>
+            </div>
+            <div class="movie">
+                <div class="movie-img">
+                    <img src="images/janatha garage poster.jpg" alt="Janatha garage movie poster">
+                </div>
+                <div class="movie-title">Janatha Garage</div>
+            </div>
+            <div class="movie">
+                <div class="movie-img">
+                    <img src="images/dhoni poster.jpg" alt="Dhoni movie poster">
+                </div>
+                <div class="movie-title">MS Dhoni</div>
+            </div>
+            <div class="movie">
+                <div class="movie-img">
+                    <img src="images/manjumal boys.jpg" alt="Manjummal Boys poster">
+                </div>
+                <div class="movie-title">Manjummal Boys</div>
+            </div>
+            <div class="movie">
+                <div class="movie-img">
+                    <img src="images/nannaku prematho poster.jpg" alt="Nannaku Prematho movie poster">
+                </div>
+                <div class="movie-title">Nannaku Prematho</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer section -->
+    <footer class="footer-section" id="footerSection">
+        <div class="social-links">
+            <div class="link"><i class="bi bi-facebook"></i></div>
+            <div class="link"><i class="bi bi-whatsapp"></i></div>
+            <div class="link"><i class="bi bi-youtube"></i></div>
+            <div class="link"><i class="bi bi-instagram"></i></div>
+            <div class="link"><i class="bi bi-linkedin"></i></div>
+            <div class="link"><i class="bi bi-twitter"></i></div>
+        </div>
+        <div class="thanks-note">
+            <p>Thanks for visiting | All rights reserved</p>
+        </div>
+    </footer>
+
+    <!-- Back to top button -->
+    <div class="back-to-top">
+        <button><i class="bi bi-arrow-up-short"></i></button>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('.nav-toggle-btn').on('click', function () {
+                $('.navigation-links').toggleClass('active');
+            });
+            $('.contact-us a').on('click', function () {
+                $('.navigation-links').toggleClass('active');
+            });
+            $('.close-btn').on('click', function () {
+                $('.navigation-links').toggleClass('active');
+            });
+            $('.nav-link').on('click', function () {
+                $('.navigation-links').toggleClass('active');
+            });
+        });
+    </script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            function handleScroll() {
+                const backToTopButton = document.querySelector('.back-to-top');
+                if (window.scrollY > 100) {
+                    backToTopButton.classList.add('active');
+                } else {
+                    backToTopButton.classList.remove('active');
+                }
+            }
+
+            // Initial check in case the page is already scrolled
+            // handleScroll();
+
+            // Add scroll event listener
+            window.addEventListener('scroll', handleScroll);
+
+            document.querySelector('.back-to-top').addEventListener('click', function () {
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth' // Smooth scroll animation
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>
